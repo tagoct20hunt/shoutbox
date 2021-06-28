@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Narrow">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>
+    Shoutbox
+  </title>
+</head>
+<body>
+  <div class="area">
+    <h2>
+      Commentbox proof of concept
+    </h2>
+    <div id="commentcontainer">
+      <ul id="commentbox"></ul>
+      <form id="input" autocomplete="off" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfuYwGNpigLHR_qJFKg1WiP7OGnlVm9kkvG6nB734y-UwzS0g/formResponse" method="POST" target="hidden_iframe">
+        <input id="usernameEntry" type="text" placeholder="username" pattern="^[a-zA-Z0-9_#]{1,14}$" required name="entry.327859455"><span id="uid"></span><br/>
+        <textarea form="input" id="textEntry" type="text" placeholder="comment" pattern="^[\s\S]{1,500}$" required name="entry.245252912"></textarea><br/>
+        <input class="button" type="submit" style="float:left" value="Submit">
+    </form>
+        <button class="button" id="refreshButton" type="submit" id="load">Reload</button>
+        <span id="refreshStats"></span>
+    </div>
+  </div>
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+  <iframe name="hidden_iframe" id="hidden_iframe"></iframe>
+</body>
+<script src="uid.js"></script>
+<script src="sheets.js"></script>
+</html>
