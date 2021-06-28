@@ -207,7 +207,7 @@ h2 {
     }
 
     100%{
-        transform: translateY(800px) rotate(720deg);
+        transform: translateY(500px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
     }
