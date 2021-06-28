@@ -6,7 +6,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color:white;
   z-index: 1;
-  overflow:hidden;
+  overflow-y: visible;
 }
 ul {
     display: inline-block;
@@ -109,7 +109,6 @@ h2 {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -1;
 }
 
 .circles li{
